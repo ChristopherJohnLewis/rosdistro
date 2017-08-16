@@ -9087,7 +9087,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/pr2/pr2_apps.git
-      version: hydro-devel
+      version: indigo-devel
     release:
       packages:
       - pr2_app_manager
@@ -9104,7 +9104,30 @@ repositories:
     source:
       type: git
       url: https://github.com/pr2/pr2_apps.git
-      version: hydro-devel
+      version: indigo-devel
+    status: maintained
+  pr2_calibration:
+    doc:
+      type: git
+      url: https://github.com/PR2/pr2_calibration.git
+      version: indigo-devel
+    release:
+      packages:
+      - dense_laser_assembler
+      - laser_joint_processor
+      - laser_joint_projector
+      - pr2_calibration
+      - pr2_calibration_launch
+      - pr2_dense_laser_snapshotter
+      - pr2_se_calibration_launch
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/TheDash/pr2_calibration-release.git
+      version: 1.0.6-0
+    source:
+      type: git
+      url: https://github.com/PR2/pr2_calibration.git
+      version: indigo-devel
     status: maintained
   pr2_common:
     doc:
@@ -9195,7 +9218,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/PR2/pr2_ethercat_drivers.git
-      version: hydro-devel
+      version: indigo-devel
     release:
       packages:
       - ethercat_hardware
@@ -9208,7 +9231,7 @@ repositories:
     source:
       type: git
       url: https://github.com/PR2/pr2_ethercat_drivers.git
-      version: hydro-devel
+      version: indigo-devel
     status: maintained
   pr2_gripper_sensor:
     doc:
@@ -9234,7 +9257,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/PR2/pr2_hack_the_future.git
-      version: hydro-devel
+      version: indigo-devel
     release:
       packages:
       - hack_the_web_program_executor
@@ -9252,7 +9275,7 @@ repositories:
     source:
       type: git
       url: https://github.com/PR2/pr2_hack_the_future.git
-      version: hydro-devel
+      version: indigo-devel
     status: maintained
   pr2_kinematics:
     doc:
@@ -9331,6 +9354,25 @@ repositories:
       url: https://github.com/ros-gbp/pr2_mechanism_msgs-release.git
       version: 1.8.0-0
     status: maintained
+  pr2_metapackages:
+    doc:
+      type: git
+      url: https://github.com/pr2/pr2_metapackages.git
+      version: indigo-devel
+    release:
+      packages:
+      - pr2
+      - pr2_base
+      - pr2_desktop
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/pr2-gbp/pr2_metapackages-release.git
+      version: 1.0.5-0
+    source:
+      type: git
+      url: https://github.com/pr2/pr2_metapackages.git
+      version: indigo-devel
+    status: maintained
   pr2_navigation:
     doc:
       type: git
@@ -9357,6 +9399,31 @@ repositories:
       type: git
       url: https://github.com/pr2/pr2_navigation.git
       version: hydro-devel
+    status: maintained
+  pr2_plugs:
+    doc:
+      type: git
+      url: https://github.com/PR2/pr2_plugs.git
+      version: indigo-devel
+    release:
+      packages:
+      - checkerboard_pose_estimation
+      - outlet_pose_estimation
+      - pr2_image_snapshot_recorder
+      - pr2_plugs
+      - pr2_plugs_actions
+      - pr2_plugs_common
+      - pr2_plugs_msgs
+      - stereo_wall_detection
+      - visual_pose_estimation
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/TheDash/pr2_plugs-release.git
+      version: 1.0.22-0
+    source:
+      type: git
+      url: https://github.com/PR2/pr2_plugs.git
+      version: indigo-devel
     status: maintained
   pr2_power_drivers:
     doc:
@@ -9393,6 +9460,21 @@ repositories:
       url: https://github.com/PR2/pr2_precise_trajectory.git
       version: hydro-devel
     status: maintained
+  pr2_props:
+    doc:
+      type: git
+      url: https://github.com/PR2/pr2_props.git
+      version: indigo-devel
+    release:
+      tags:
+        release: release/indigo/{package}/{version}
+      url: https://github.com/TheDash/pr2_props-release.git
+      version: 1.0.3-0
+    source:
+      type: git
+      url: https://github.com/PR2/pr2_props.git
+      version: indigo-devel
+    status: maintained
   pr2_props_app:
     doc:
       type: git
@@ -9411,7 +9493,7 @@ repositories:
   pr2_props_stack:
     doc:
       type: git
-      url: https://github.com/pr2/pr2_props_stack.git
+      url: https://github.com/pr2/pr2_props.git
       version: hydro-devel
     release:
       packages:
@@ -9419,7 +9501,7 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/pr2-gbp/pr2_props_stack-release.git
-      version: 1.0.4-1
+      version: 1.0.3-0
     source:
       type: git
       url: https://github.com/pr2/pr2_props_stack.git
@@ -9444,7 +9526,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/PR2/pr2_robot.git
-      version: hydro-devel
+      version: indigo-devel
     release:
       packages:
       - imu_monitor
@@ -9458,11 +9540,11 @@ repositories:
       tags:
         release: release/indigo/{package}/{version}
       url: https://github.com/pr2-gbp/pr2_robot-release.git
-      version: 1.6.23-1
+      version: 1.6.24-1
     source:
       type: git
       url: https://github.com/pr2/pr2_robot.git
-      version: hydro-devel
+      version: indigo-devel
     status: maintained
   pr2_self_test:
     release:
@@ -9500,7 +9582,7 @@ repositories:
     doc:
       type: git
       url: https://github.com/PR2/pr2_simulator.git
-      version: hydro-devel
+      version: indigo-devel
     release:
       packages:
       - pr2_controller_configuration_gazebo
@@ -9514,12 +9596,12 @@ repositories:
     source:
       type: git
       url: https://github.com/PR2/pr2_simulator.git
-      version: hydro-devel
+      version: indigo-devel
     status: maintained
   pr2_teleop_app:
     doc:
       type: git
-      url: https://github.com/pr2/pr2_teleop_app.git
+        url: https://github.com/pr2/pr2_teleop_app.git
       version: hydro-devel
     release:
       tags:
